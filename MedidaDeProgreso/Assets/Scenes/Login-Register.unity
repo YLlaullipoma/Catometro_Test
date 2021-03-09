@@ -426,41 +426,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59235996}
   m_CullTransparentMesh: 0
---- !u!1 &62892732
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 62892733}
-  m_Layer: 5
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &62892733
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 62892732}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1382403288}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -800, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &81807884
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,7 +673,7 @@ GameObject:
   - component: {fileID: 93726073}
   - component: {fileID: 93726072}
   m_Layer: 5
-  m_Name: UserName-T
+  m_Name: ChurchTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1039,7 +1004,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &101974131
 MonoBehaviour:
@@ -1229,7 +1194,7 @@ GameObject:
   - component: {fileID: 120783264}
   - component: {fileID: 120783263}
   m_Layer: 5
-  m_Name: InputField (TMP)
+  m_Name: ConPassInputField (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1727,7 +1692,7 @@ GameObject:
   - component: {fileID: 177815719}
   - component: {fileID: 177815718}
   m_Layer: 5
-  m_Name: UserName-T
+  m_Name: GroupTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2199,7 +2164,7 @@ GameObject:
   - component: {fileID: 233452365}
   - component: {fileID: 233452364}
   m_Layer: 5
-  m_Name: InputField (TMP)
+  m_Name: PassInputField (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2711,7 +2676,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &437097110
 GameObject:
@@ -3777,7 +3742,7 @@ GameObject:
   - component: {fileID: 582306173}
   - component: {fileID: 582306172}
   m_Layer: 5
-  m_Name: UserName-T
+  m_Name: ConPassTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4324,6 +4289,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 748141160}
+  - component: {fileID: 748141162}
+  - component: {fileID: 748141161}
   m_Layer: 0
   m_Name: Music
   m_TagString: Untagged
@@ -4339,12 +4306,125 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748141159}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.09458323, y: -0.46879888, z: 4.7549896}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &748141161
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748141159}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &748141162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748141159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56ae059baecd202459afafc398411680, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &812389787
 GameObject:
   m_ObjectHideFlags: 0
@@ -4388,7 +4468,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 700, y: 1321.6216}
+  m_SizeDelta: {x: 700, y: 1321.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &812389789
 MonoBehaviour:
@@ -4562,7 +4642,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &911306443
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4581,7 +4661,7 @@ RectTransform:
   - {fileID: 273167890}
   - {fileID: 1061507692}
   m_Father: {fileID: 1382403288}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4795,7 +4875,7 @@ GameObject:
   - component: {fileID: 935695165}
   - component: {fileID: 935695164}
   m_Layer: 5
-  m_Name: Continuar (1)
+  m_Name: NextStep
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4860,7 +4940,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 935695165}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2074458609}
+        m_MethodName: ConfirmarPrimerPaso
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &935695165
@@ -5502,7 +5593,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1262320119
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5517,7 +5608,7 @@ RectTransform:
   - {fileID: 812389788}
   - {fileID: 2142700428}
   m_Father: {fileID: 1382403288}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5966,7 +6057,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 84339862}
-  - {fileID: 62892733}
   - {fileID: 1262320119}
   - {fileID: 911306443}
   m_Father: {fileID: 0}
@@ -6147,7 +6237,7 @@ GameObject:
   - component: {fileID: 1454977130}
   - component: {fileID: 1454977129}
   m_Layer: 5
-  m_Name: InputField (TMP)
+  m_Name: UserInputField (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6646,7 +6736,7 @@ GameObject:
   - component: {fileID: 1516345468}
   - component: {fileID: 1516345467}
   m_Layer: 5
-  m_Name: PassInputField
+  m_Name: PasswInputField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7127,7 +7217,7 @@ GameObject:
   - component: {fileID: 1550100407}
   - component: {fileID: 1550100406}
   m_Layer: 5
-  m_Name: UserName-T
+  m_Name: UserTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7443,7 +7533,7 @@ GameObject:
   - component: {fileID: 1637058198}
   - component: {fileID: 1637058197}
   m_Layer: 5
-  m_Name: UserName-T
+  m_Name: PassTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7667,7 +7757,7 @@ GameObject:
   - component: {fileID: 1709373941}
   - component: {fileID: 1709373940}
   m_Layer: 5
-  m_Name: InputField (TMP)
+  m_Name: ChurchInputField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8386,7 +8476,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1879559135
 GameObject:
@@ -8782,7 +8872,7 @@ GameObject:
   - component: {fileID: 2007053366}
   - component: {fileID: 2007053365}
   m_Layer: 5
-  m_Name: InputField (TMP)
+  m_Name: GroupInputField (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8963,6 +9053,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2074458608}
+  - component: {fileID: 2074458609}
   m_Layer: 0
   m_Name: Registar-Entrar
   m_TagString: Untagged
@@ -8978,12 +9069,46 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2074458607}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.2013227, y: -0.3571893, z: 70.06836}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2074458609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074458607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaf8de6b3e181994a9ebc7d8259c1c47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputFielsRegister:
+  - {fileID: 1454977129}
+  - {fileID: 233452364}
+  - {fileID: 120783263}
+  - {fileID: 1709373940}
+  - {fileID: 2007053365}
+  usernameGet: {fileID: 1454977129}
+  passwordGet: {fileID: 233452364}
+  conPassGet: {fileID: 120783263}
+  churchNameGet: {fileID: 1709373940}
+  groupNameGet: {fileID: 2007053365}
+  usernameLogGet: {fileID: 519269866}
+  passwordLogGet: {fileID: 1516345467}
+  registroUser: 
+  registroPass: 
+  registroPass2: 
+  registroParroquia: 
+  registroGrupo: 
+  logeoUser: 
+  logePass: 
+  nexStepBtn: {fileID: 935695164}
+  registerPivot: {fileID: 1262320119}
 --- !u!1 &2108755751
 GameObject:
   m_ObjectHideFlags: 0

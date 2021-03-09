@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour {
     public GameObject soundMng;
     public GameObject mscMng;
     public GameObject register;
+
     //Verificadores
     public bool isLoged;
 
@@ -26,20 +27,29 @@ public class GameManager : MonoBehaviour {
     }
     // Start is called before the first frame update
     void Start() {
-        //FindObjects
-        if (SceneManager.GetActiveScene().name == "Login-Register") {
-            register = GameObject.Find("Registar-Entrar");
-            GetComponent<Register>();
-        }
-        //Enlazar scripts por manejar
-        profile.GetComponent<Profile>();
-        scrnMng.GetComponent<ScreenManager>();
-        soundMng.GetComponent<SoundManager>();
-        mscMng.GetComponent<MusicManager>();
+        
     }
 
     // Update is called once per frame
     void Update() {
 
+        //FindObjects
+        if (SceneManager.GetActiveScene().name == "Login-Register") {
+            register = GameObject.Find("Registar-Entrar");
+            register.GetComponent<Register>();
+        }
+        if (SceneManager.GetActiveScene().name == "Principal") {
+            profile = GameObject.Find("ProfileC");
+            profile.GetComponent<Profile>();
+        }
+
+        scrnMng = GameObject.Find("");
+        soundMng = GameObject.Find("");
+        mscMng = GameObject.Find("");
+
+        /*Enlazar scripts por manejar
+        scrnMng.GetComponent<ScreenManager>();
+        soundMng.GetComponent<SoundManager>();
+        mscMng.GetComponent<MusicManager>();*/
     }
 }
